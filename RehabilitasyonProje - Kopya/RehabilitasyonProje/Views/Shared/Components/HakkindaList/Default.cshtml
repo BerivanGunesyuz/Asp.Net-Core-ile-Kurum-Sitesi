@@ -1,0 +1,17 @@
+﻿@using EntityLayer.Concrete
+@model List<Hakkinda>
+
+<div class="section pt-4 px-3 px-lg-4" id="about">
+    <div class="container-narrow">
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="h4 my-2">Sarıkamış Rehabilitasyon Merkezi</h2>
+                    <p>@item.HakkindaAciklama</p>
+                </div>
+                <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="@item.HakkindaImage" width="400" height="400" alt="Walter Patterson" /></div>
+            </div>
+        }
+    </div>
+</div>
